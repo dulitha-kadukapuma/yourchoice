@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Clothes Preferences</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="goTo('user-info.html')">← Back</button>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-label">Step 2 of 3 — Clothes Preferences</div>
+  <div class="progress-track"><div class="progress-fill" style="width:66%"></div></div>
+</div>
+
+<div class="form-wrap">
+  <h2 class="form-heading">👕 Clothes Preferences</h2>
+  <p class="form-sub">Tell us your style so we can suggest what fits you best.</p>
+
+  <form id="clothesForm" novalidate>
+
+    <div class="q-card" id="cardStyle">
+      <div class="q-label"><span class="q-icon">🎨</span> Style Preference</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="style" id="s1" value="casual"/><label for="s1">Casual</label></div>
+        <div class="radio-opt"><input type="radio" name="style" id="s2" value="formal"/><label for="s2">Formal</label></div>
+        <div class="radio-opt"><input type="radio" name="style" id="s3" value="streetwear"/><label for="s3">Streetwear</label></div>
+        <div class="radio-opt"><input type="radio" name="style" id="s4" value="traditional"/><label for="s4">Traditional</label></div>
+        <div class="radio-opt"><input type="radio" name="style" id="s5" value="sportswear"/><label for="s5">Sportswear</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardPriceSens">
+      <div class="q-label"><span class="q-icon">💸</span> Price Sensitivity</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="priceSens" id="ps1" value="very-important"/><label for="ps1">Very Important</label></div>
+        <div class="radio-opt"><input type="radio" name="priceSens" id="ps2" value="moderately-important"/><label for="ps2">Moderately Important</label></div>
+        <div class="radio-opt"><input type="radio" name="priceSens" id="ps3" value="not-important"/><label for="ps3">Not Important</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardPriority">
+      <div class="q-label"><span class="q-icon">⭐</span> What Matters Most?</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="priority" id="pr1" value="brand-name"/><label for="pr1">Brand Name</label></div>
+        <div class="radio-opt"><input type="radio" name="priority" id="pr2" value="fabric-quality"/><label for="pr2">Fabric Quality</label></div>
+        <div class="radio-opt"><input type="radio" name="priority" id="pr3" value="design"/><label for="pr3">Design</label></div>
+        <div class="radio-opt"><input type="radio" name="priority" id="pr4" value="comfort"/><label for="pr4">Comfort</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardPlatform">
+      <div class="q-label"><span class="q-icon">🛍️</span> Shopping Platform</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="platform" id="pl1" value="online"/><label for="pl1">Online</label></div>
+        <div class="radio-opt"><input type="radio" name="platform" id="pl2" value="shopping-mall"/><label for="pl2">Shopping Mall</label></div>
+        <div class="radio-opt"><input type="radio" name="platform" id="pl3" value="local-shops"/><label for="pl3">Small Local Shops</label></div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button type="submit" class="btn btn-primary">Get Recommendation ✨</button>
+      <button type="button" class="btn btn-ghost" onclick="startOver()">Start Over</button>
+    </div>
+
+  </form>
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

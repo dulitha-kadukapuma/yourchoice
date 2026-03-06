@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Market Analytics</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="history.back()">← Back</button>
+</header>
+
+<div class="ent-wrap" id="entResultSection">
+
+  <h2 class="form-heading" style="margin-top:20px; color:#fff">📊 Market Analytics</h2>
+  <p class="form-sub" id="insightSummary">Analyzing your target market…</p>
+
+  <!-- Charts -->
+  <div class="chart-grid">
+    <div class="chart-card chart-card-full">
+      <h4>📊 Preference Popularity</h4>
+      <canvas id="chartPrefs" height="110"></canvas>
+    </div>
+    <div class="chart-card">
+      <h4>🛒 Buying Behavior</h4>
+      <canvas id="chartBuy" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <h4>💰 Price Range Trends</h4>
+      <canvas id="chartPrice" height="220"></canvas>
+    </div>
+  </div>
+
+  <!-- Key Insight -->
+  <div class="insight-card">
+    <h4>💡 Key Insight</h4>
+    <p id="insightText">Loading…</p>
+  </div>
+
+  <!-- Product Suggestions -->
+  <div class="insight-card" style="border-color:rgba(255,122,24,0.3)">
+    <h4 style="color:#FF7A18">🚀 Product Improvement Suggestions</h4>
+    <p>Based on your target market analysis:</p>
+    <ul class="suggestion-list" id="suggestionList"></ul>
+  </div>
+
+  <!-- Actions -->
+  <div class="btn-row" style="justify-content:center; margin-top:30px">
+    <button class="btn btn-accent" onclick="goTo('entrepreneur-type.html')">🔄 New Analysis</button>
+    <button class="btn btn-ghost" onclick="startOver()">🏠 Home</button>
+  </div>
+
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

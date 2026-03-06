@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Gift Preferences</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="goTo('user-info.html')">← Back</button>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-label">Step 2 of 3 — Gift Preferences</div>
+  <div class="progress-track"><div class="progress-fill" style="width:66%"></div></div>
+</div>
+
+<div class="form-wrap">
+  <h2 class="form-heading">🎁 Gift Preferences</h2>
+  <p class="form-sub">Help us find the perfect gift recommendation for you.</p>
+
+  <form id="giftForm" novalidate>
+
+    <div class="q-card" id="cardPref">
+      <div class="q-label"><span class="q-icon">💝</span> General Preference</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="preference" id="p1" value="personalized gifts"/><label for="p1">Personalized Gifts</label></div>
+        <div class="radio-opt"><input type="radio" name="preference" id="p2" value="tech gadgets"/><label for="p2">Tech Gadgets</label></div>
+        <div class="radio-opt"><input type="radio" name="preference" id="p3" value="handmade items"/><label for="p3">Handmade Items</label></div>
+        <div class="radio-opt"><input type="radio" name="preference" id="p4" value="luxury items"/><label for="p4">Luxury Items</label></div>
+        <div class="radio-opt"><input type="radio" name="preference" id="p5" value="budget-friendly gifts"/><label for="p5">Budget-Friendly</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardPrice">
+      <div class="q-label"><span class="q-icon">💰</span> Price Range</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="price" id="pr1" value="under-1000"/><label for="pr1">Under Rs.1000</label></div>
+        <div class="radio-opt"><input type="radio" name="price" id="pr2" value="1000-3000"/><label for="pr2">Rs.1000–3000</label></div>
+        <div class="radio-opt"><input type="radio" name="price" id="pr3" value="3000-5000"/><label for="pr3">Rs.3000–5000</label></div>
+        <div class="radio-opt"><input type="radio" name="price" id="pr4" value="above-5000"/><label for="pr4">Above Rs.5000</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardBuy">
+      <div class="q-label"><span class="q-icon">🛒</span> Buying Behavior</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="buy" id="b1" value="online"/><label for="b1">Online Shopping</label></div>
+        <div class="radio-opt"><input type="radio" name="buy" id="b2" value="in-store"/><label for="b2">In-Store Shopping</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardOccasion">
+      <div class="q-label"><span class="q-icon">🎉</span> Occasion</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="occasion" id="o1" value="birthday"/><label for="o1">Birthday</label></div>
+        <div class="radio-opt"><input type="radio" name="occasion" id="o2" value="wedding"/><label for="o2">Wedding</label></div>
+        <div class="radio-opt"><input type="radio" name="occasion" id="o3" value="anniversary"/><label for="o3">Anniversary</label></div>
+        <div class="radio-opt"><input type="radio" name="occasion" id="o4" value="festival"/><label for="o4">Festival</label></div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button type="submit" class="btn btn-primary">Get Recommendation ✨</button>
+      <button type="button" class="btn btn-ghost" onclick="startOver()">Start Over</button>
+    </div>
+
+  </form>
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

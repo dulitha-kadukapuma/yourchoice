@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Food Preferences</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="goTo('user-info.html')">← Back</button>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-label">Step 2 of 3 — Food Preferences</div>
+  <div class="progress-track"><div class="progress-fill" style="width:66%"></div></div>
+</div>
+
+<div class="form-wrap">
+  <h2 class="form-heading">🍔 Food Preferences</h2>
+  <p class="form-sub">Tell us what you love to eat and we'll find your next favorite.</p>
+
+  <form id="foodForm" novalidate>
+
+    <div class="q-card" id="cardTaste">
+      <div class="q-label"><span class="q-icon">😋</span> Taste Preference</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="taste" id="t1" value="spicy"/><label for="t1">🌶️ Spicy</label></div>
+        <div class="radio-opt"><input type="radio" name="taste" id="t2" value="sweet"/><label for="t2">🍬 Sweet</label></div>
+        <div class="radio-opt"><input type="radio" name="taste" id="t3" value="savory"/><label for="t3">🧂 Savory</label></div>
+        <div class="radio-opt"><input type="radio" name="taste" id="t4" value="healthy"/><label for="t4">🥗 Healthy / Low-Cal</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardHabit">
+      <div class="q-label"><span class="q-icon">📅</span> Eating Habit</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="habit" id="h1" value="daily"/><label for="h1">Daily</label></div>
+        <div class="radio-opt"><input type="radio" name="habit" id="h2" value="weekly"/><label for="h2">Weekly</label></div>
+        <div class="radio-opt"><input type="radio" name="habit" id="h3" value="rarely"/><label for="h3">Rarely</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardFactor">
+      <div class="q-label"><span class="q-icon">🤔</span> Decision Factor</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="factor" id="f1" value="price"/><label for="f1">Price</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="f2" value="taste"/><label for="f2">Taste</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="f3" value="brand"/><label for="f3">Brand</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="f4" value="health-value"/><label for="f4">Health Value</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="f5" value="packaging"/><label for="f5">Packaging</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardNew">
+      <div class="q-label"><span class="q-icon">🆕</span> Open to New Products?</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="newProduct" id="n1" value="yes"/><label for="n1">Yes, always!</label></div>
+        <div class="radio-opt"><input type="radio" name="newProduct" id="n2" value="maybe"/><label for="n2">Maybe sometimes</label></div>
+        <div class="radio-opt"><input type="radio" name="newProduct" id="n3" value="no"/><label for="n3">No, I stick to what I know</label></div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button type="submit" class="btn btn-primary">Get Recommendation ✨</button>
+      <button type="button" class="btn btn-ghost" onclick="startOver()">Start Over</button>
+    </div>
+
+  </form>
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

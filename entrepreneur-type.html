@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Entrepreneur Tools</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="goTo('index.html')">← Back</button>
+</header>
+
+<div class="form-wrap">
+  <h2 class="form-heading" style="margin-top:20px">🚀 Entrepreneur Tools</h2>
+  <p class="form-sub">Which describes you today?</p>
+
+  <div class="type-grid">
+
+    <a href="entrepreneur-test-product.html" class="type-card"
+       onclick="event.preventDefault(); goTo('entrepreneur-test-product.html')">
+      <div class="tc-icon">1️⃣</div>
+      <span class="tc-num">Test Demand</span>
+      <div class="tc-title">I already have a product</div>
+      <p class="tc-desc">Test how much demand exists for your product with real market data.</p>
+    </a>
+
+    <a href="entrepreneur-research.html" class="type-card"
+       onclick="event.preventDefault(); goTo('entrepreneur-research.html')">
+      <div class="tc-icon">2️⃣</div>
+      <span class="tc-num">Market Research</span>
+      <div class="tc-title">Build from trends</div>
+      <p class="tc-desc">Discover what your target audience wants before you build anything.</p>
+    </a>
+
+  </div>
+
+  <div class="btn-row mt-8">
+    <button class="btn btn-ghost" onclick="startOver()">🏠 Home</button>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

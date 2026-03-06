@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Services Preferences</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="goTo('user-info.html')">← Back</button>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-label">Step 2 of 3 — Services Preferences</div>
+  <div class="progress-track"><div class="progress-fill" style="width:66%"></div></div>
+</div>
+
+<div class="form-wrap">
+  <h2 class="form-heading">🛠️ Services Preferences</h2>
+  <p class="form-sub">Let us know what kinds of services interest you.</p>
+
+  <form id="servicesForm" novalidate>
+
+    <div class="q-card" id="cardService">
+      <div class="q-label"><span class="q-icon">🔧</span> Service Type</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="service" id="sv1" value="online courses"/><label for="sv1">📚 Online Courses</label></div>
+        <div class="radio-opt"><input type="radio" name="service" id="sv2" value="gym"/><label for="sv2">🏋️ Gym / Fitness</label></div>
+        <div class="radio-opt"><input type="radio" name="service" id="sv3" value="beauty services"/><label for="sv3">💅 Beauty Services</label></div>
+        <div class="radio-opt"><input type="radio" name="service" id="sv4" value="repair services"/><label for="sv4">🔨 Repair Services</label></div>
+        <div class="radio-opt"><input type="radio" name="service" id="sv5" value="consulting"/><label for="sv5">💼 Consulting</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardFactor">
+      <div class="q-label"><span class="q-icon">🎯</span> Decision Factor</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="factor" id="df1" value="price"/><label for="df1">Price</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="df2" value="quality"/><label for="df2">Quality</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="df3" value="reviews"/><label for="df3">Reviews</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="df4" value="convenience"/><label for="df4">Convenience</label></div>
+        <div class="radio-opt"><input type="radio" name="factor" id="df5" value="location"/><label for="df5">Location</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardBooking">
+      <div class="q-label"><span class="q-icon">📲</span> Booking Preference</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="booking" id="bk1" value="online-app"/><label for="bk1">Online App</label></div>
+        <div class="radio-opt"><input type="radio" name="booking" id="bk2" value="website"/><label for="bk2">Website</label></div>
+        <div class="radio-opt"><input type="radio" name="booking" id="bk3" value="direct-call"/><label for="bk3">Direct Call</label></div>
+        <div class="radio-opt"><input type="radio" name="booking" id="bk4" value="walk-in"/><label for="bk4">Walk-In</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardSatisfaction">
+      <div class="q-label"><span class="q-icon">😊</span> Customer Review Importance</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="satisfaction" id="sat1" value="very-important"/><label for="sat1">Very Important</label></div>
+        <div class="radio-opt"><input type="radio" name="satisfaction" id="sat2" value="somewhat-important"/><label for="sat2">Somewhat Important</label></div>
+        <div class="radio-opt"><input type="radio" name="satisfaction" id="sat3" value="not-important"/><label for="sat3">Not Important</label></div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button type="submit" class="btn btn-primary">Get Recommendation ✨</button>
+      <button type="button" class="btn btn-ghost" onclick="startOver()">Start Over</button>
+    </div>
+
+  </form>
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

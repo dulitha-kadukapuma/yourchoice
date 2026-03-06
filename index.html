@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Discover What People Love</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="assets/background-video.mp4" type="video/mp4"/>
+  </video>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-logo">YOUR<span>CHOICE</span></h1>
+    <p class="hero-sub">Discover what people love.</p>
+
+    <div class="hero-glass">
+      <a href="user-info.html" class="hero-btn"
+         onclick="event.preventDefault(); document.body.style.opacity='0'; setTimeout(()=>location.href='user-info.html',350)">
+        <span class="hb-icon">👤</span>
+        <span class="hb-title">Normal User</span>
+        <span class="hb-sub">Get personalized ideas</span>
+      </a>
+      <a href="entrepreneur-type.html" class="hero-btn"
+         onclick="event.preventDefault(); document.body.style.opacity='0'; setTimeout(()=>location.href='entrepreneur-type.html',350)">
+        <span class="hb-icon">🚀</span>
+        <span class="hb-title">Entrepreneur</span>
+        <span class="hb-sub">Analyze market demand</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<!-- No floating animation on main page -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Your Recommendation</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="history.back()">← Back</button>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-label">Step 3 of 3 — Your Recommendation</div>
+  <div class="progress-track"><div class="progress-fill" style="width:100%"></div></div>
+</div>
+
+<div class="result-wrap" id="resultSection">
+
+  <!-- Summary -->
+  <div class="summary-card">
+    <h3>Your Profile</h3>
+    <div class="summary-grid">
+      <div class="sum-item">
+        <div class="si-label">Age Group</div>
+        <div class="si-val" id="sumAge">—</div>
+      </div>
+      <div class="sum-item">
+        <div class="si-label">Gender</div>
+        <div class="si-val" id="sumGender">—</div>
+      </div>
+      <div class="sum-item">
+        <div class="si-label">Country</div>
+        <div class="si-val" id="sumCountry">—</div>
+      </div>
+      <div class="sum-item">
+        <div class="si-label">Region</div>
+        <div class="si-val" id="sumRegion">—</div>
+      </div>
+      <div class="sum-item" style="grid-column:1/-1">
+        <div class="si-label">Interest</div>
+        <div class="si-val" id="sumInterest">—</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recommendation -->
+  <div class="rec-card">
+    <span class="rec-emoji" id="recEmoji">✨</span>
+    <div class="rec-cat" id="recLabel">Recommended Idea</div>
+    <div class="rec-title" id="recTitle">Finding your match…</div>
+    <p class="rec-reason" id="recReason"></p>
+  </div>
+
+  <div class="btn-row" style="justify-content:center">
+    <button class="btn btn-accent" onclick="startOver()">🔄 Start Over</button>
+    <button class="btn btn-ghost" onclick="history.back()">← Change Answers</button>
+  </div>
+
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

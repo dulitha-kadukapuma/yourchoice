@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – About You</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="goTo('index.html')">← Back</button>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-label">Step 1 of 3 — Your Profile</div>
+  <div class="progress-track"><div class="progress-fill" style="width:33%"></div></div>
+</div>
+
+<div class="form-wrap">
+  <h2 class="form-heading">Tell Us About You 👤</h2>
+  <p class="form-sub">A few quick questions to personalize your experience.</p>
+
+  <form id="userInfoForm" novalidate>
+
+    <div class="q-card" id="cardAge">
+      <div class="q-label"><span class="q-icon">🎂</span> Age Group</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="age" id="a1" value="8-18"/><label for="a1">8–18</label></div>
+        <div class="radio-opt"><input type="radio" name="age" id="a2" value="19-25"/><label for="a2">19–25</label></div>
+        <div class="radio-opt"><input type="radio" name="age" id="a3" value="26-40"/><label for="a3">26–40</label></div>
+        <div class="radio-opt"><input type="radio" name="age" id="a4" value="40+"/><label for="a4">40+</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardGender">
+      <div class="q-label"><span class="q-icon">🧑</span> Gender</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="gender" id="g1" value="male"/><label for="g1">Male</label></div>
+        <div class="radio-opt"><input type="radio" name="gender" id="g2" value="female"/><label for="g2">Female</label></div>
+        <div class="radio-opt"><input type="radio" name="gender" id="g3" value="other"/><label for="g3">Other</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardCountry">
+      <div class="q-label"><span class="q-icon">🌍</span> Country</div>
+      <select class="styled-select" id="countrySelect">
+        <option value="">Select Country</option>
+      </select>
+    </div>
+
+    <div class="q-card" id="cardRegion">
+      <div class="q-label"><span class="q-icon">📍</span> Region</div>
+      <select class="styled-select" id="regionSelect">
+        <option value="">Select Region</option>
+      </select>
+    </div>
+
+    <div class="q-card" id="cardInterest">
+      <div class="q-label"><span class="q-icon">💡</span> What are you looking for?</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="interest" id="i1" value="gift"/><label for="i1">🎁 Gift Ideas</label></div>
+        <div class="radio-opt"><input type="radio" name="interest" id="i2" value="clothes"/><label for="i2">👕 Clothes Ideas</label></div>
+        <div class="radio-opt"><input type="radio" name="interest" id="i3" value="food"/><label for="i3">🍔 Food Ideas</label></div>
+        <div class="radio-opt"><input type="radio" name="interest" id="i4" value="services"/><label for="i4">🛠️ Services</label></div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button type="submit" class="btn btn-primary">Next Step →</button>
+      <button type="button" class="btn btn-ghost" onclick="startOver()">Start Over</button>
+    </div>
+
+  </form>
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>

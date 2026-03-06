@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourChoice – Market Research</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="page-inner">
+
+<header class="page-header">
+  <a href="index.html" class="logo-link" onclick="event.preventDefault(); goTo('index.html')">YOUR<span>CHOICE</span></a>
+  <button class="back-btn" onclick="goTo('entrepreneur-type.html')">← Back</button>
+</header>
+
+<div class="form-wrap">
+  <h2 class="form-heading" style="margin-top:20px">🔍 Market Research</h2>
+  <p class="form-sub">Define your target audience to discover what they actually want.</p>
+
+  <form id="researchForm" novalidate>
+
+    <div class="q-card" id="cardResAge">
+      <div class="q-label"><span class="q-icon">🎂</span> Target Age Group</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="resAge" id="ra1" value="8-18"/><label for="ra1">8–18</label></div>
+        <div class="radio-opt"><input type="radio" name="resAge" id="ra2" value="19-25"/><label for="ra2">19–25</label></div>
+        <div class="radio-opt"><input type="radio" name="resAge" id="ra3" value="26-40"/><label for="ra3">26–40</label></div>
+        <div class="radio-opt"><input type="radio" name="resAge" id="ra4" value="40+"/><label for="ra4">40+</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardResGender">
+      <div class="q-label"><span class="q-icon">🧑</span> Target Gender</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="resGender" id="rg1" value="male"/><label for="rg1">Male</label></div>
+        <div class="radio-opt"><input type="radio" name="resGender" id="rg2" value="female"/><label for="rg2">Female</label></div>
+        <div class="radio-opt"><input type="radio" name="resGender" id="rg3" value="all"/><label for="rg3">All Genders</label></div>
+      </div>
+    </div>
+
+    <div class="q-card" id="cardResCountry">
+      <div class="q-label"><span class="q-icon">🌍</span> Target Country</div>
+      <select class="styled-select" id="countryRes">
+        <option value="">Select Country</option>
+      </select>
+    </div>
+
+    <div class="q-card" id="cardResCat">
+      <div class="q-label"><span class="q-icon">📦</span> Category of Interest</div>
+      <div class="radio-group">
+        <div class="radio-opt"><input type="radio" name="resCategory" id="rc1" value="gift"/><label for="rc1">🎁 Gifts</label></div>
+        <div class="radio-opt"><input type="radio" name="resCategory" id="rc2" value="clothes"/><label for="rc2">👕 Clothes</label></div>
+        <div class="radio-opt"><input type="radio" name="resCategory" id="rc3" value="food"/><label for="rc3">🍔 Food</label></div>
+        <div class="radio-opt"><input type="radio" name="resCategory" id="rc4" value="services"/><label for="rc4">🛠️ Services</label></div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button type="submit" class="btn btn-accent">🔍 Research Market</button>
+      <button type="button" class="btn btn-ghost" onclick="goTo('entrepreneur-type.html')">← Back</button>
+    </div>
+
+  </form>
+</div>
+
+<footer>
+  <div class="foot-logo">YOUR<span>CHOICE</span></div>
+  <p>Helping people discover what people love.</p>
+</footer>
+
+<script src="js/dataset.js"></script>
+<script src="js/script.js"></script>
+<script src="js/floating-animation.js"></script>
+</body>
+</html>
